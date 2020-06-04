@@ -1,3 +1,5 @@
+<html>
+<head>
 <?php
 function randomkeys($length){   
    $output='';   
@@ -9,3 +11,5 @@ function randomkeys($length){
 echo randomkeys(14); 
 
 ?>
+</head>
+</html>
