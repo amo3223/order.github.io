@@ -45,25 +45,19 @@
 </style> 
 <html>
 <body>
-<div class="ex"><img  class="thick-green-border" src="https://i.imgur.com/JNEWQjD.png" width="100" height="100"></div>
-<div class="plan"><h3>已收到你的訂單</h3><div>
- <br></br>
- 
- <br></br>
- <h5 class="red-text"></h5> 
-<div class="box red-box">
-  <h5>萬分感謝你的惠顧</h5>
-  <h5>1.本店提供台灣本島寄送服務(不接受郵政信箱地址),暫無提供離島,確認付款完成 我們會在30分鐘到一小時內將商品寄到你的收貨地址。</h5>
-  <h5>2.免手續費(94這麼爽)</h5>  
-</div>
- <br></br>
-<h5 class="white-text"></h5> 
-<div class="box white-box">
-  <h5>aaaccc</h5>
- <h5>aaaccc</h5>
- <h5>aaaccc</h5> 
-    
-</div>
+ <head>
+<?php
+function randomkeys($length){   
+   $output='';   
+   for ($a = 0; $a<$length; $a++) {   
+       $output .= chr(mt_rand(65, 90));    //生成php隨機數   
+    }   
+    return $output;   
+}   
+echo randomkeys(14); 
+
+?>
+  </head>
 </body>
 </html>
 
