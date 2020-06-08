@@ -56,16 +56,23 @@
   <h5>1.本店提供台灣本島寄送服務(不接受郵政信箱地址),暫無提供離島,確認付款完成 我們會在30分鐘到一小時內將商品寄到你的收貨地址。</h5>
   <h5>2.免手續費(94這麼爽)</h5>  
 </div>
- <head>
-
-</head>
  <br></br>
 <h5 class="white-text"></h5> 
 <div class="box white-box">
   <h5>aaaccc</h5>
  <h5>aaaccc</h5>
  <h5>aaaccc</h5> 
-      
+<?php
+function randomkeys($length){   
+   $output='';   
+   for ($a = 0; $a<$length; $a++) {   
+       $output .= chr(mt_rand(65, 90));    //生成php隨機數   
+    }   
+    return $output;   
+}   
+echo randomkeys(14); 
+
+?>      
 </div>
 </body>
 </html>
