@@ -1,6 +1,6 @@
 var btn=document.getElementById('btn')
 	var order=document.getElementById('order')
-	btn.onclick = function(){
+	btn.onclick = function(){ 
 		GetDateNow();
     }
 	
