@@ -58,10 +58,10 @@
     </div>
     <br></br>
     <div class="exa"> 
-           <button onclick="myFunction() ">訂單產生</button>
+           <button onclick="myFunction()" onclick="this.disabled=true">訂單產生</button>
 
             <p id="demo"></p>
-           <input type="button" disabled="disabled" value="訂單產生">
+           
           <script>
          function myFunction() {
          var newId =(Math.random() / +new Date()).toString(36).replace(/[^a-z]+/g, '');
