@@ -12,8 +12,8 @@
     <style>
         .mystyle {
             background-color:gray;
-           
-            .thick-green-border{     
+            }
+        .thick-green-border{     
                  border-color: green; 
                  border-width: 5px;
                  border-style: solid;    
@@ -51,7 +51,6 @@
             color: black ;
             padding: 20px 40px 20px 40px;
             }
-  }
         </style>
 </head>
 </html>
