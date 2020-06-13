@@ -64,7 +64,7 @@
 
           <script>
          function myFunction() {
-         var newId ="randomid_" + (Math.random() / +new Date()).toString(36).replace(/[^a-z]+/g, '');
+         var newId =(Math.random() / +new Date()).toString(36).replace(/[^a-z]+/g, '');
          document.getElementById("demo").innerHTML = newId;
                    
          }
