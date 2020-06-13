@@ -1,13 +1,4 @@
-<script>
-    function rand(min,max) {
-        return Math.floor(Math.random()*(max-min))+min;
-    }
-    var btn=document.getElementById("btn");
-    btn.onclick=function(){
-        var randnum=rand(1000,9999);
-        document.getElementById("num").innerHTML=randnum;
-    }
-    </script>
+
 
 <style> 
          body{
@@ -67,8 +58,17 @@
     </div>
     <br></br>
     <div class="exa"> 
-            <input type="button" id="btn" value="点击生成随机四位数" />
-            <span id="num"></span>
+           <button onclick="myFunction()">Try it</button>
+
+            <p id="demo"></p>
+
+            <script>
+            function myFunction() {
+             var num = 15;
+            var n = num.toString();
+             document.getElementById("demo").innerHTML = n;
+            }
+            </script>
     </div>
     <br></br>
     <div class="red-text">
