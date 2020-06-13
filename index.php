@@ -1,4 +1,4 @@
-<?php
+<?php 
     $title = '訂單成立';
     $string = '已收到訂單';
     $stringa = '萬分感謝你的惠顧';
