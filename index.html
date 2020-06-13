@@ -1,20 +1,4 @@
-   
-<script> 
-function randomWord(randomFlag, min, max){
-var str = "",
-range = min,
-arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-// 隨機產生
-if(randomFlag){
-range = Math.round(Math.random() * (max-min))   min;
-}
-for(var i=0; i<range; i  ){
-pos = Math.round(Math.random() * (arr.length-1));
-str  = arr[pos];
-}
-return str;
-}
-</script>
+
 
 <style> 
          body{
@@ -65,6 +49,7 @@ return str;
 <!DOCTYPE html>
 <html lang="en">
 <body>
+   <div id="app">
     <div class="ex">
         <img  class="thick-green-border" src="https://i.imgur.com/JNEWQjD.png" width="100" height="100">
     </div>
@@ -72,7 +57,7 @@ return str;
         <h5>已收到訂單</h5>
     </div>
     <div class="exa"> 
-            randomWord(true, 3, 32)
+            <button @click=" randomWord((randomFlag, min, max))">按</button>
     </div>
     <div class="red-text">
         <div class="box black-box">
@@ -80,6 +65,7 @@ return str;
                 <h5>本店提供台灣本島寄送服務(不接受郵政信箱地址),暫無提供離島,確認付款完成 我們會在30分鐘到一小時內將商品寄到你的收貨地址。</h5>
         </div>    
     </div>
-        
+  </div>      
 </body>
+   <script src="index.js"></script>
 </html>
