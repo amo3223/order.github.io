@@ -1,4 +1,13 @@
-
+<script>
+    function rand(min,max) {
+        return Math.floor(Math.random()*(max-min))+min;
+    }
+    var btn=document.getElementById("btn");
+    btn.onclick=function(){
+        var randnum=rand(1000,9999);
+        document.getElementById("num").innerHTML=randnum;
+    }
+    </script>
 
 <style> 
          body{
@@ -49,7 +58,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-   <div id="app">
+   
     <div class="ex">
         <img  class="thick-green-border" src="https://i.imgur.com/JNEWQjD.png" width="100" height="100">
     </div>
@@ -57,7 +66,8 @@
         <h5>已收到訂單</h5>
     </div>
     <div class="exa"> 
-            <button @click=" randomWord((true, 3, 32))">按</button>
+            <input type="button" id="btn" value="点击生成随机四位数" />
+            <span id="num"></span>
     </div>
     <div class="red-text">
         <div class="box black-box">
@@ -65,7 +75,7 @@
                 <h5>本店提供台灣本島寄送服務(不接受郵政信箱地址),暫無提供離島,確認付款完成 我們會在30分鐘到一小時內將商品寄到你的收貨地址。</h5>
         </div>    
     </div>
-  </div>      
+       
 </body>
-   <script src="index.js"></script>
+
 </html>
