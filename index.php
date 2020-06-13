@@ -1,6 +1,51 @@
+<style>
+ body{  
+    background-color:gray;
+} 
+.thick-green-border{     
+  border-color: green; 
+  border-width: 5px;
+  border-style: solid;    
+}      
+  .ex{     
+    text-align:  center; 
+  }  
+ .plan{ 
+   text-align:  center; 
+ } 
+ .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+ 
+ .red-text { 
+    margin-bottom: -25px;
+    text-align: center;
+  }
+ .white-text { 
+    margin-bottom: -30px;
+    text-align: center;
+  }
+ 
+ 
+  .red-box {
+    background-color: 	#fa8072;
+    color: black;
+    padding: 20px 40px 20px 40px;
+  }
+ .white-box {
+    background-color: white;
+    color: black ;
+    padding: 20px 40px 20px 40px;
+  }
+
 <html>
   
   <body>
+ <div class="ex"><img  class="thick-green-border" src="https://i.imgur.com/JNEWQjD.png" width="100" height="100"></div>
+<div class="plan"><h3>已收到你的訂單</h3></div>
     <?php
 function getrand_id(){
     $id_len = 10;//字串長度
@@ -27,5 +72,17 @@ for($x=0;$x<1;$x++){
     echo $a[$x];//顯示結果
 }
 ?>
+    <h5 class="red-text"></h5> 
+<div class="box red-box">
+  <h5>萬分感謝你的惠顧</h5>
+  <h5>1.本店提供台灣本島寄送服務(不接受郵政信箱地址),暫無提供離島,確認付款完成 我們會在30分鐘到一小時內將商品寄到你的收貨地址。</h5>
+    
+</div>
+ <br></br>
+<h5 class="white-text"></h5> 
+<div class="box white-box">
+  
+    
+</div>
   </body>
 </html>
