@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $title; ?></title>
     <style>
-        .mystyle {
+         body{
             background-color:gray;
             }
         .thick-green-border{     
