@@ -54,11 +54,12 @@
         </style>
 </head>
 <body>
-    <div class="plan">
-        <?php echo $string; ?>
-    </div>
     <div class="ex">
         <img  class="thick-green-border" src="https://i.imgur.com/JNEWQjD.png" width="100" height="100">
     </div>
+    <div class="plan">
+        <?php echo $string; ?>
+    </div>
+   
 </body>
 </html>
