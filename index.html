@@ -1,16 +1,4 @@
-<script>
-document.getElementById('getMessage').onclick = function() {
-　　len = len || 32;
-　　var $chars = ‘ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678’;    /****預設去掉了容易混淆的字元oOLl,9gq,Vv,Uu,I1****/
-　　var maxPos = $chars.length;
-　　var pwd = ”;
-　　for (i = 0; i < len; i ) { 
-　　　　pwd = $chars.charAt(Math.floor(Math.random() * maxPos));
-　　}
-　　return pwd;
-}
- 
-</script>
+
 <style>
          body{
             background-color:gray;
@@ -67,11 +55,7 @@ document.getElementById('getMessage').onclick = function() {
         <h5>已收到訂單</h5>
     </div>
     <div class="exa"> 
-         <p>
-         <button id="getMessage">
-          Get Message
-         </button>
-         </p>
+        Math.random().toString(36).substr(2);
     </div>
     <div class="red-text">
         <div class="box black-box">
