@@ -1,5 +1,5 @@
-<script language=”javascript”>
-function randomString(len) {
+<script>
+document.getElementById('getMessage').onclick = function() {
 　　len = len || 32;
 　　var $chars = ‘ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678’;    /****預設去掉了容易混淆的字元oOLl,9gq,Vv,Uu,I1****/
 　　var maxPos = $chars.length;
@@ -9,7 +9,7 @@ function randomString(len) {
 　　}
 　　return pwd;
 }
-document.write(randomString(32));
+
 </script>
 <style>
          body{
@@ -67,7 +67,11 @@ document.write(randomString(32));
         <h5>已收到訂單</h5>
     </div>
     <div class="exa"> 
-         <button @click="randomString(len)">按</button>
+         <p>
+         <button id="getMessage">
+          Get Message
+         </button>
+         </p>
     </div>
     <div class="red-text">
         <div class="box black-box">
