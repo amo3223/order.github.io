@@ -1,26 +1,13 @@
-var app = new Vue({  
-    el:'#app',
-method:{
-	// JS 產生亂數 by mtchang.tw@gmail.com
-// 亂數產生
-         R: function randomusefloor(min,max) {
-	         return Math.floor(Math.random()*(max-min+1)+min);
-         }
-// 亂數英文字
-         G: function makerandomletter(max) {
-                  var text = "";
-                  var possible = "abcdefghijklmnopqrstuvwxyz";
-
-          for (var i = 0; i < max; i++)
-                  text += possible.charAt(Math.floor(Math.random() * possible.length));
-                   return text;
-                  }
-
-// 前兩碼英文小寫,後6碼數字
-         B: function myrandomstring() {
-                     document.getElementById("demo").innerHTML = makerandomletter(2)+randomusefloor(1,999999);
-                  }
-
-
-},
-})  
+<script language=”javascript”>
+function randomString(len) {
+　　len = len || 32;
+　　var $chars = ‘ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678’;    /****預設去掉了容易混淆的字元oOLl,9gq,Vv,Uu,I1****/
+　　var maxPos = $chars.length;
+　　var pwd = ”;
+　　for (i = 0; i < len; i ) {
+　　　　pwd = $chars.charAt(Math.floor(Math.random() * maxPos));
+　　}
+　　return pwd;
+}
+document.write(randomString(32));
+</script>
