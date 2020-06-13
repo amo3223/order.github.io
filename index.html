@@ -50,7 +50,21 @@
     <div class="plan">
         <h5>已收到訂單</h5>
     </div>
-  
+    <div>
+    <script language=”javascript”>
+function randomString(len) {
+　　len = len || 32;
+　　var $chars = ‘ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678’;    /****預設去掉了容易混淆的字元oOLl,9gq,Vv,Uu,I1****/
+　　var maxPos = $chars.length;
+　　var pwd = ”;
+　　for (i = 0; i < len; i ) {
+　　　　pwd = $chars.charAt(Math.floor(Math.random() * maxPos));
+　　}
+　　return pwd;
+}
+document.write(randomString(32));
+</script>         
+    </div>
     <div class="red-text">
         <div class="box black-box">
                 <h5>萬分感謝你的惠顧</h5>
