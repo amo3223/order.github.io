@@ -1,5 +1,5 @@
 <?php
-    $title = '網站標題';
+    $title = '網站標題'; 
     $string = '我的首頁';
 ?>
 <!DOCTYPE html>
